@@ -7,6 +7,7 @@ import 'package:newsapp/helper/news.dart';
 import 'package:newsapp/models/article_model.dart';
 import 'package:newsapp/models/category_model.dart';
 import 'package:newsapp/views/article_view.dart';
+import 'package:newsapp/views/category_news.dart';
 
 class Home extends StatefulWidget {
 
@@ -109,7 +110,11 @@ class CategoryTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: (){
-
+        Navigator.push(context, MaterialPageRoute(
+          builder: (context) => CategoryNews(
+            category: categoryName.toLowerCase(),
+          )
+        ));
       },
       child: Container(
         margin: EdgeInsets.only(right: 16),

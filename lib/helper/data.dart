@@ -34,5 +34,17 @@ List<CategoryModel> getCategories(){
   categoryModel.imageUrl = "https://media.istockphoto.com/photos/abs-hologram-data-flow-grid-picture-id1254730455?s=612x612";
   category.add(categoryModel);
 
+  //6
+  categoryModel = new CategoryModel();
+  categoryModel.categoryName = "Science";
+  categoryModel.imageUrl = "https://images.unsplash.com/photo-1574170609519-d1d8d4b71f60?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80";
+  category.add(categoryModel);
+
+  //7
+  categoryModel = new CategoryModel();
+  categoryModel.categoryName = "Health";
+  categoryModel.imageUrl = "https://images.unsplash.com/photo-1556911073-52527ac43761?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80";
+  category.add(categoryModel);
+
   return category;
 }
