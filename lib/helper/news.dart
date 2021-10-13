@@ -9,8 +9,7 @@ class News{
 
   Future <void> getNews() async{
 
-    String url = "https://newsapi.org/v2/top-headlines?country=ng&apiKey=2d49a0b9560e4540b1306bb5b6f147ac";
-
+    String url = "https://newsapi.org/v2/top-headlines?country=ng&apiKey=b58cacb27d07445b901ac68a8416154c";
     var response = await http.get(Uri.parse(url));
 
     var jsonData = jsonDecode(response.body);
@@ -42,7 +41,7 @@ class CategoryNewsClass{
 
   Future <void> getNews(String category) async{
 
-    String url = "https://newsapi.org/v2/top-headlines?category=$category&country=ng&apiKey=2d49a0b9560e4540b1306bb5b6f147ac";
+    String url = "https://newsapi.org/v2/top-headlines?category=$category&country=ng&apiKey=b58cacb27d07445b901ac68a8416154c";
 
     var response = await http.get(Uri.parse(url));
 

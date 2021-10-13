@@ -23,7 +23,7 @@ class _HomeState extends State<Home> {
   bool _loading = true;
 
   @override
-  Void initState(){
+  void initState(){
     categories = getCategories();
     getNews();
     super.initState();
@@ -42,10 +42,13 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.white,
         title: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text("Flutter"),
+            Text("Flutter", style: TextStyle(
+              color: Colors.black
+            ),),
             Text("News", style: TextStyle(
               color: Colors.blue
             ),)
