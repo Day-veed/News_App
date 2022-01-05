@@ -20,12 +20,12 @@ class _ArticleStateView extends State<ArticleView> {
 
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
       appBar: AppBar(
+        backgroundColor: Colors.white,
         title: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text("Flutter", style: TextStyle(
+            Text("Dave's", style: TextStyle(
               color: Colors.black
             ),),
             Text("News", style: TextStyle(

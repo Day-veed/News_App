@@ -21,9 +21,9 @@ class _CategoryNewsState extends State<CategoryNews> {
   bool _loading = true;
 
   @override
-  Void initState(){
-    getCategoryNews();
+  void initState(){
     super.initState();
+    getCategoryNews();
   }
 
   getCategoryNews() async{
@@ -43,7 +43,7 @@ class _CategoryNewsState extends State<CategoryNews> {
         title: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text("Flutter", style: TextStyle(
+            Text("Dave's", style: TextStyle(
               color: Colors.black
             ),),
             Text("News", style: TextStyle(

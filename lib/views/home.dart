@@ -24,9 +24,9 @@ class _HomeState extends State<Home> {
 
   @override
   void initState(){
+    super.initState();
     categories = getCategories();
     getNews();
-    super.initState();
   }
 
   getNews() async{
@@ -46,7 +46,7 @@ class _HomeState extends State<Home> {
         title: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text("Flutter", style: TextStyle(
+            Text("Dave's", style: TextStyle(
               color: Colors.black
             ),),
             Text("News", style: TextStyle(
